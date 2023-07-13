@@ -399,6 +399,7 @@ int main(int argc, char* argv[])
 	menuUpdate(cursor, showinfo);
 	if(wrongfirmware) printf("\n\nWARNING!!\nYou are not on the expected firmware!\n(firm 11.16.0-X)\n");
 	
+	havecfw = 0; // disable CFW check temporarily
 	while (aptMainLoop())
 	{
 		gspWaitForVBlank();
